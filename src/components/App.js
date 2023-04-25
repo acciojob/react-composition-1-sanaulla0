@@ -1,11 +1,20 @@
 
-import React from "react";
+import React , {useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
+     const [data , setData] = useState('');
+   const handleclicked = (value)=>{
+            setData(value);
+   }
   return (
     <div>
-        {/* Do not remove the main div */}
+        <ul>
+             <li value='Tab 1' onClick={()=>handleclicked("Tab 1")}>Tab 1</li>
+             <li value='Tab 2' onClick={()=>handleclicked("Tab 2")}>Tab 2</li>
+             <li value='Tab 3' onClick={()=>handleclicked('Tab 3')}>Tab 3</li>
+        </ul>
+        <div>This is the content for {data}.</div>
     </div>
   )
 }
