@@ -3,7 +3,7 @@ import React , {useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
-     const [data , setData] = useState('');
+     const [data , setData] = useState('Tab 1');
    const handleclicked = (value)=>{
             setData(value);
    }
