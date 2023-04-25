@@ -15,7 +15,7 @@ const App = () => {
              <li value='Tab 2' onClick={()=>handleclicked("Tab 2")}>Tab 2</li>
              
              <li value='Tab 3' onClick={()=>handleclicked('Tab 3')}>Tab 3</li>
-             <div>This is the content for {data}.</div>
+             <div><h4>This is the content for {data}.</h4></div>
         </ul>
        
     </div>
